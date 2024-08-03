@@ -1,0 +1,56 @@
+.box {
+  position: relative;
+
+  height: 57vw;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: all 1000ms ease-in-out;
+}
+.box:hover h3 {
+  opacity: 0;
+}
+.box:hover {
+  width: 200px;
+}
+h3 {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -9px;
+  bottom: 50%;
+  text-transform: uppercase;
+  color: silver;
+}
+.list {
+  display: inline-block;
+  width: 100px;
+  margin-top: 70px;
+  margin-left: 80px;
+}
+.item {
+  margin-bottom: 12px;
+}
+.link {
+  color: darkgray;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.link:hover {
+  color: gold;
+}
+.link:hover::before {
+  background-color: gold;
+}
+.link::before {
+  content: " ";
+
+  display: inline-block;
+  margin-right: 5px;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+
+  background-color: silver;
+  transform: rotate(45deg);
+}
