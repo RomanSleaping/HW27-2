@@ -1,8 +1,8 @@
 .box {
   position: relative;
-
+  transform: translateX(-80%);
   height: 57vw;
-  width: 60px;
+  width: 180px;
   background-color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
   transition: all 1000ms ease-in-out;
@@ -11,7 +11,7 @@
   opacity: 0;
 }
 .box:hover {
-  width: 200px;
+  transform: translateX(0);
 }
 h3 {
   transform: rotate(-90deg);
@@ -24,8 +24,10 @@ h3 {
 .list {
   display: inline-block;
   width: 100px;
-  margin-top: 70px;
-  margin-left: 80px;
+
+  position: absolute;
+  left: 40px;
+  top: 250px;
 }
 .item {
   margin-bottom: 12px;
